@@ -1,0 +1,29 @@
+$breakpoints: (
+  sm: 699px,
+  md: 838px,
+  lg: 1024px,
+);
+
+@mixin tablet() {
+  @media (699px<width<848px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (width<699px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (699px<width<1024px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (width<1024px) {
+    @content;
+  }
+}
